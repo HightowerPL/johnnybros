@@ -12,6 +12,19 @@
     display: inline-flex;
 }
 
+.section__card--quote {
+    position: relative;
+    &::after{
+        font-family: FontAwesome;
+        content: '\f10e';
+        position: absolute;
+        top: 3.25rem;
+        right: .5rem;
+        font-size: 5.5rem;
+        opacity: .15;
+    }
+}
+
 .section__img--quote {
     width: 3rem;
     height: 3rem;

@@ -1,6 +1,22 @@
 .section--contact {
-    input{
-        border: none;
-        border-bottom: 1px solid 
+
+}
+.section__img--office{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section__wrapper--contact{
+    padding: 2.5rem 1rem ;
+}
+
+.section__form--msg {
+    .section__input--name, .section__input--email, .section__textarea {
+        width:100%;
     }
+}
+
+.section__button--submit {
+    width: 100%;
 }

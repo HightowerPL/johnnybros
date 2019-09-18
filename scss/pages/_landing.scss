@@ -1,7 +1,8 @@
-.section--landing{
+.section--home{
     background: url('../assets/images/pp-main-background.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: white;
-    padding: 6rem 1rem;
+    padding: 6rem 1rem 2rem;
     text-align: center;
     .section__text--subtitle{
         padding-bottom: 2rem;
@@ -15,12 +16,27 @@
     }
 }
 
-.section__icon--down {
-    border: 1px solid white;
-    border-radius:50%;
-}
-
 .section__button--join {
     display:block;
     @include margin-auto;
+}
+
+.section__wrapper--icon {
+    opacity: .7;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 50%;
+    width:  1.875rem;
+    height:  1.875rem;
+    margin-top: 1.25rem;
+    transition: all .4s;
+    @include margin-auto;
+    .icon--fa{
+        font-size: .75rem;
+        @include center(both);
+    }
+    &:hover {
+        background-color: $primaryBgColor;
+        color: $secondaryColor;
+    }
 }

@@ -9,30 +9,56 @@
     <title>Johnnybros - zadanie rekrutacyjne</title>
   </head>
   <body>
-    <header class="header">
-        <figure class="header__logo">
-            <img src="assets/images/jb-logo.svg" alt="JB-Logo">
+    <header class="header js-header">
+        <figure class="header__wrapper--logo">
+            <img class="header__img--logo" src="assets/images/jb-logo.svg" alt="JB-Logo">
         </figure>
-
-        <div class="header__nav">
+    
+        <div class="header__wrapper--nav js-nav">
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__list-item">Home</li>
-                    <li class="nav__list-item">O turnieju</li>
-                    <li class="nav__list-item">Nagrody</li>
-                    <li class="nav__list-item">Jak dołączyć</li>
-                    <li class="nav__list-item">Kontakt</li>
+                    <li class="nav__list-item section__text--medium js-home active">
+                        <a href="#home">
+                                Home
+                        </a>
+                        
+                    </li>
+                    <li class="nav__list-item section__text--medium js-tourney">
+                        <a href="#tourney">
+                                O turnieju
+                        </a>
+                        
+                    </li>
+                    <li class="nav__list-item section__text--medium js-awards">
+                        <a href="#awards">
+                                Nagrody
+                        </a>
+                       
+                    </li>
+                    <li class="nav__list-item section__text--medium js-join">
+                        <a href="#join">
+                                Jak dołączyć
+                        </a>
+                        
+                    </li>
+                    <li class="nav__list-item section__text--medium js-contact">
+                        <a href="#contact">
+                                Kontakt
+                        </a>   
+                    </li>
                 </ul>
             </nav>
         </div>
-
-        <figure class="header__burger">
-            <img src="" alt="burger">
-        </figure>
+    
+        <div class="header__burger js-burger">
+            <hr class="one">
+            <hr class="two">
+            <hr class="three">
+        </div>
     </header>
 
 
-    <section class="section section--landing">
+    <section class="section section--home" id="home">
 
         <div class="container">
             <h4 class="section__text--subtitle">Turniej piłkarzyków</h4>
@@ -40,13 +66,22 @@
             <p class="section__text--medium">
                 Czy masz już dosyć nudnej codzienności, potrzebujesz nowych doznań, lub po prostu chcesz wymiatać w piłkarzykach? W takim wypadku możesz być pewien, że turniej piłkarzyków Party Parrot jest stworzony dla Ciebie!
             </p>
-            <button class="button section__button section__button--join">Dołącz do turnieju</button>
-            <i class="section__icon--down">v</i>
+            <button class="button section__button section__button--join">
+                <a href="#contact">
+                    Dołącz do turnieju
+                </a> 
+            </button>
+            <a href="#tourney">
+                    <div class="section__wrapper--icon">
+                            <i class="section__icon--down icon--fa">&#xf078</i>
+                        </div>
+            
+            </a>
         </div>
 
     </section>
 
-    <section class="section section--tourney">
+    <section class="section section--tourney" id="tourney">
     
         <div class="section__card section__card--top section__card--tourney">
                 <h4 class="section__text--subtitle">O turnieju</h4>
@@ -55,7 +90,11 @@
                     uczestnikom niezwykłe doznania, takie jak duże ilości dokuczliwych żartów ze strony drużyny przeciwnej i
                     frustrujące porażki, ale także satysfakcjonujące zwycięstwa oraz możliwość zobaczenia grymasu na twarzy
                     osoby, którą właśnie pokonałeś 10 - 0. Brzmi ciekawie?</p>
-                <button class="section__button section__button--join">Dołącz do turnieju</button>
+                <button class="section__button section__button--join">
+                    <a href="#contact">
+                        Dołącz do turnieju
+                    </a> 
+                </button>
         </div>
         <figure class="section__wrapper--foosball">
             <img class="section__img--foosball" src="assets/images/pp-foosball-match.jpg" alt="">
@@ -83,7 +122,7 @@
     
     </section>
 
-    <section class="section section--basic section--awards">
+    <section class="section section--basic section--awards" id="awards">
 
                 <h4 class="section__text--subtitle">Nagrody</h4>
                 <h3 class="section__text--title">Dla pięciu najlepszych graczy przygotowano </h3>
@@ -132,14 +171,18 @@
         
     </section>
 
-    <section class="section section--join">
+    <section class="section section--join" id="join">
 
             <div class="section__card section__card--top  section__card--join">
 
                     <h4 class="section__text--subtitle">Jak dołączyć?</h4>
                     <h3 class="section__text--title">Wystarczy chwila, aby móc cieszyć się</h3>
                     <p class="section__text--regular">Zachęciły Cię nagrody lub wizja momentów pełnych satysfakcji i chcesz dołączyć do turnieju? Zarejestruj się na naszym serwisie i zacznij cieszyć się emocjami przy stole do piłkarzyków!</p>
-                    <button class="section__button section__button--join">Dołącz do turnieju</button>
+                    <button class="section__button section__button--join">
+                    <a href="#contact">
+                        Dołącz do turnieju
+                    </a>    
+                    </button>
 
             </div>
         
@@ -162,24 +205,27 @@
         
     </section>
 
-    <section class="section section--contact">
-
-        <div class="container">
+    <section class="section section--basic section--contact" id="contact">
+        <figure class="section__wrapper--img">
+            <img class="section__img--office" src="assets/images/pp-office.jpg" alt="office">
+        </figure>
+        <div class="section__wrapper--contact" >
                 <h4 class="section__text--subtitle">Kontakt</h4>
                 <h3 class="section__text--title">Napisz do nas!</h3>
                 <form class="form section__form--msg">
-                    <input type="text" name="name" placeholder="Imię i nazwisko" class="form__input section__input">
+                    <input type="text" name="name" placeholder="Imię i nazwisko" class="form__input section__input--name">
                     <input type="email" name="email" placeholder="Adres e-mail" class="form__input section__input--email"></ipnut>
                     <textarea placeholder="Treść wiadomości" name="msg" id="" cols="30" rows="10" class="form__textarea section__textarea"></textarea>
                     <button class="section__button section__button--submit">Wyślij wiadomość</button>
                 </form>   
         </div>
-        
     </section>
 
     <footer class="footer">
-        <span class="footer__text">JohnnyBros @2018</span>
+        <span class="footer__text section__text--regular">JohnnyBros @2018</span>
     </footer>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+  <script src="js/script.js"></script>
 
 </html>

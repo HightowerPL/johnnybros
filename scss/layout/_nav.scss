@@ -1,6 +1,45 @@
-.nav{
+.header__wrapper--nav {
     display: none;
     position: fixed;
-    z-index:1000;
-    background-color: rgba(0,0,0,.5);
+    top: 0;
+    right: 0;
+    left:0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.8);
+}
+
+.nav{
+    background-color: $tertiaryBgColor;
+    height: 100%;
+    width: 87%;
+    float: right;
+    padding: 4rem 3rem;
+}
+
+.nav__list-item {
+    font-family: RalewayMedium;
+    font-size:  1.375rem;
+    color: $primaryFontColor;
+    margin-bottom: 1.25rem;
+    transition: all .4s;
+    position: relative;
+    &:after{
+        content: '';
+        width: 42px;
+        height: 3px;
+        background-color: $quaternaryBgColor;
+        position: absolute;
+        top:50%;
+        left:-38%;
+        display: none;
+    }
+    &:hover::after{
+        display: block;
+    }
+    &.active::after{
+        display: block;
+        height:3px;
+        background-color: $quaternaryBgColor; 
+    }
+
 }

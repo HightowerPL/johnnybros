@@ -1,19 +1,23 @@
 .form{
-    font-family: RalewayRegular;
+    
 }
 
 .form__input{
     font-family: RalewayRegular;
     padding: .5rem 0;
     border: none;
-    border-bottom: 2px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
 }
 
 .form__textarea {
     font-family: RalewayRegular;
     padding: .5rem;
     background-color: $secondaryBgColor;
-    border: 2px solid rgba(0,0,0,.24);
+    border: 2px solid $borderColor;
     border-radius:2px;
-
+    box-sizing:border-box;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
 }
