@@ -1,0 +1,31 @@
+.section--awards {
+    text-align: center;
+    padding: 2rem 1rem 0;
+}
+
+
+.section__list-item--awards {
+    display: inline-block;
+    flex-direction: column;
+    width: 180px;
+    margin-bottom: 2.25rem;
+}
+
+.section__list--awards{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .section__text--number {
+        font-size: 2.25rem;
+        margin-bottom: 1rem;
+        color: $secondaryFontColor;
+        opacity:.4;
+        &.active{
+            color: $tertiaryFontColor;
+            opacity: 1;
+        }
+    }
+}
+
+.section__img--award{
+    margin-bottom: 1rem;
+}

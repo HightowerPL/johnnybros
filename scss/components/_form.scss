@@ -1,0 +1,19 @@
+.form{
+    font-family: RalewayRegular;
+}
+
+.form__input{
+    font-family: RalewayRegular;
+    padding: .5rem 0;
+    border: none;
+    border-bottom: 2px solid $borderColor;
+}
+
+.form__textarea {
+    font-family: RalewayRegular;
+    padding: .5rem;
+    background-color: $secondaryBgColor;
+    border: 2px solid rgba(0,0,0,.24);
+    border-radius:2px;
+
+}

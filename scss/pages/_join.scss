@@ -1,0 +1,26 @@
+.section--join {
+    background-color: $secondaryBgColor;
+} 
+
+.section__card--join{
+    margin:0 .5rem;
+}
+
+
+
+.section__signature{
+    display: inline-flex;
+}
+
+.section__img--quote {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: $primaryBgColor;
+    overflow: hidden;
+    margin-right: 1rem;
+    // background: url('../assets/images/pp-social-proof.png') no-repeat center center;
+    img{
+        width: 100%;
+    }
+}

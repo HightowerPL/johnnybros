@@ -1,3 +1,6 @@
+.mobile-hide {
+  display: none; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -18,6 +21,8 @@ body {
   line-height: 1; }
 
 ol, ul {
+  margin: 0;
+  padding: 0;
   list-style: none; }
 
 blockquote, q {
@@ -35,6 +40,278 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+input {
+  border: none; }
+
+button {
+  border: none; }
+
+@font-face {
+  font-family: RalewayMedium;
+  src: url("../assets/fonts/Raleway/Raleway-Medium.ttf"); }
+
+@font-face {
+  font-family: RalewayRegular;
+  src: url("../assets/fonts/Raleway/Raleway-Regular.ttf"); }
+
+@font-face {
+  font-family: RalewayBold;
+  src: url("../assets/fonts/Raleway/Raleway-Bold.ttf"); }
+
+@font-face {
+  font-family: MilluniumMedium;
+  src: url("../assets/fonts/Millunium Medium/Millunium-Medium.ttf"); }
+
+@font-face {
+  font-family: FontAwesome;
+  src: url("../assets/fonts/Font Awesome/fontawesome-webfont.woff"); }
+
 body {
-  font-size: 14px;
+  font-size: 16px; }
+
+h1 {
+  font-size: 2.375rem;
+  line-height: 2.375rem; }
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.375rem; }
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.75rem; }
+
+h4 {
+  font-size: 0.9375rem;
+  line-height: 1.25; }
+
+h5 {
+  font-size: 0.9375rem;
+  line-height: 1rem; }
+
+p {
+  font-size: 0.875rem;
+  line-height: 1.375rem; }
+
+button {
+  font-size: 0.9375rem;
+  line-height: 1.125rem; }
+
+.nav__list-item {
+  font-size: 0.9375rem;
+  text-transform: capitalize; }
+
+.section__text--title, .section__text--number {
+  font-family: MilluniumMedium; }
+
+.section__text--subtitle {
+  font-family: RalewayBold;
+  text-transform: uppercase;
+  letter-spacing: .125rem; }
+
+.section__text--medium {
+  font-family: RalewayMedium; }
+
+.section__text--regular {
+  font-family: RalewayRegular; }
+
+.section__text--bold {
+  font-family: RalewayBold; }
+
+.nav {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+header {
+  display: inline-flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  height: 3.25rem;
+  padding: 1rem; }
+
+footer {
+  background-color: #1E3066;
+  color: white;
+  padding: 1rem;
+  text-align: center; }
+
+.section__button {
+  height: 42px;
+  width: 240px;
+  background-color: #3FAE49;
+  font-family: RalewayBold;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer; }
+
+.section__card {
+  padding: 2rem 1rem; }
+
+.section__card--top {
+  position: relative;
+  background-color: white;
+  top: 2rem;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18); }
+  .section__card--top .section__text--subtitle {
+    color: black;
+    opacity: .5;
+    margin-bottom: 1.25rem; }
+  .section__card--top .section__text--title {
+    color: black;
+    opacity: .8;
+    margin-bottom: 2.5rem; }
+  .section__card--top .section__text--regular {
+    color: black;
+    opacity: .8;
+    margin-bottom: 1.25rem; }
+
+.section__card--quote {
+  background-color: #3FAE49;
+  color: white;
+  padding: 4.688rem .5rem 1rem; }
+  .section__card--quote .section__text--medium {
+    margin-bottom: 1rem; }
+
+.section--basic .section__text--subtitle {
+  color: black;
+  opacity: .5;
+  margin-bottom: 1.25rem; }
+
+.section--basic .section__text--title {
+  color: black;
+  opacity: .8;
+  margin-bottom: 2.5rem; }
+
+.section__card--stats {
+  background-color: #3FAE49;
+  color: white;
+  padding: 2rem;
+  text-align: center; }
+  .section__card--stats .section__text--subtitle {
+    letter-spacing: 3px;
+    margin-bottom: 2rem; }
+  .section__card--stats .section__text--number {
+    font-size: 2.188rem;
+    margin-bottom: .5rem; }
+  .section__card--stats .section__text--bold {
+    font-size: 0.9375rem; }
+
+.form {
+  font-family: RalewayRegular; }
+
+.form__input {
+  font-family: RalewayRegular;
+  padding: .5rem 0;
+  border: none;
+  border-bottom: 2px solid #707070; }
+
+.form__textarea {
+  font-family: RalewayRegular;
+  padding: .5rem;
+  background-color: #F5F5F5;
+  border: 2px solid rgba(0, 0, 0, 0.24);
+  border-radius: 2px; }
+
+.section--landing {
+  background: url("../assets/images/pp-main-background.jpg") no-repeat center center fixed;
+  color: white;
+  padding: 6rem 1rem;
+  text-align: center; }
+  .section--landing .section__text--subtitle {
+    padding-bottom: 2rem;
+    letter-spacing: 3px; }
+  .section--landing .section__text--title {
+    padding-bottom: 4rem; }
+  .section--landing .section__text--medium {
+    padding-bottom: 1rem; }
+
+.section__icon--down {
+  border: 1px solid white;
+  border-radius: 50%; }
+
+.section__button--join {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.section--tourney {
+  background-color: #F5F5F5;
+  padding-top: .5rem; }
+
+.section__wrapper--foosball {
+  height: 320px; }
+
+.section__card--tourney {
+  margin: 0 .5rem;
+  background-color: white; }
+
+.section__img--foosball {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.section__card--quote {
+  padding-top: 4.688rem; }
+
+.section__list-item--stats {
+  margin-bottom: 1rem; }
+
+.section--join {
+  background-color: #F5F5F5; }
+
+.section__card--join {
+  margin: 0 .5rem; }
+
+.section__signature {
+  display: inline-flex; }
+
+.section__img--quote {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
+  margin-right: 1rem; }
+  .section__img--quote img {
+    width: 100%; }
+
+.section--awards {
+  text-align: center;
+  padding: 2rem 1rem 0; }
+
+.section__list-item--awards {
+  display: inline-block;
+  flex-direction: column;
+  width: 180px;
+  margin-bottom: 2.25rem; }
+
+.section__list--awards {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  .section__list--awards .section__text--number {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    color: black;
+    opacity: .4; }
+    .section__list--awards .section__text--number.active {
+      color: #3FAE49;
+      opacity: 1; }
+
+.section__img--award {
+  margin-bottom: 1rem; }
+
+.section--contact input {
+  border: none;
+  border-bottom: 1px solid; }
+
+body {
   background-color: white; }

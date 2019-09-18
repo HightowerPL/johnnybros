@@ -4,80 +4,182 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="icon" href="assets/images/favicon.png">
     <link rel="stylesheet" href="css/main.css"> 
     <title>Johnnybros - zadanie rekrutacyjne</title>
   </head>
   <body>
+    <header class="header">
+        <figure class="header__logo">
+            <img src="assets/images/jb-logo.svg" alt="JB-Logo">
+        </figure>
 
-    <nav class="nav">
-        <div class="nav__logo">
-            <img src="" alt="">
+        <div class="header__nav">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item">Home</li>
+                    <li class="nav__list-item">O turnieju</li>
+                    <li class="nav__list-item">Nagrody</li>
+                    <li class="nav__list-item">Jak dołączyć</li>
+                    <li class="nav__list-item">Kontakt</li>
+                </ul>
+            </nav>
         </div>
-        <ul class="nav__list">
-            <li class="nav__list-item">Home</li>
-            <li class="nav__list-item">O turnieju</li>
-            <li class="nav__list-item">Nagrody</li>
-            <li class="nav__list-item">Jak dołączyć</li>
-            <li class="nav__list-item">Kontakt</li>
-        </ul>
-    </nav>
+
+        <figure class="header__burger">
+            <img src="" alt="burger">
+        </figure>
+    </header>
+
 
     <section class="section section--landing">
 
         <div class="container">
-            <p class="section__text--title">Turniej piłkarzyków</p>
-            <p class="section__text--heading">Party Parrot Tournament</p>
-            <p class="section__text--normal"></p>
-            <button class="section__button button">Dołącz do turnieju</button>
+            <h4 class="section__text--subtitle">Turniej piłkarzyków</h4>
+            <h1 class="section__text--title">Party Parrot <span class="mobile-hide">Tournament</span></h1>
+            <p class="section__text--medium">
+                Czy masz już dosyć nudnej codzienności, potrzebujesz nowych doznań, lub po prostu chcesz wymiatać w piłkarzykach? W takim wypadku możesz być pewien, że turniej piłkarzyków Party Parrot jest stworzony dla Ciebie!
+            </p>
+            <button class="button section__button section__button--join">Dołącz do turnieju</button>
+            <i class="section__icon--down">v</i>
         </div>
 
     </section>
 
     <section class="section section--tourney">
-
-        <div class="container">
-                <p class="section__text--title"></p>
-                <p class="section__text--heading"></p>
-                <p class="section__text--normal"></p>
     
+        <div class="section__card section__card--top section__card--tourney">
+                <h4 class="section__text--subtitle">O turnieju</h4>
+                <h3 class="section__text--title">Graj z najlepszymi, poczuj ducha rywalizacji i wiatr</h3>
+                <p class="section__text--regular">Party Parrot Tournament to turniej piłkarzyków, który oferuje jego
+                    uczestnikom niezwykłe doznania, takie jak duże ilości dokuczliwych żartów ze strony drużyny przeciwnej i
+                    frustrujące porażki, ale także satysfakcjonujące zwycięstwa oraz możliwość zobaczenia grymasu na twarzy
+                    osoby, którą właśnie pokonałeś 10 - 0. Brzmi ciekawie?</p>
+                <button class="section__button section__button--join">Dołącz do turnieju</button>
         </div>
+        <figure class="section__wrapper--foosball">
+            <img class="section__img--foosball" src="assets/images/pp-foosball-match.jpg" alt="">
+        </figure>
+        <div class="section__card section__card--stats">
 
+            <h4 class="section__text--subtitle">
+                Dzienne statystyki
+            </h4>
+            <ul class="section__list section__list--stats">
+                <li class="section__list-item section__list-item--stats">
+                    <p class="section__text--number">90</p>
+                    <p class="section__text--bold">Rozegranych meczów</p>
+                </li>
+                <li class="section__list-item section__list-item--stats">
+                    <p class="section__text--number">1530</p>
+                    <p class="section__text--bold">Strzelonych bramek</p>
+                </li>
+                <li class="section__list-item section__list-item--stats">
+                    <p class="section__text--number">3</p>
+                    <p class="section__text--bold">Litry potu</p>
+                </li>
+            </ul>
+        </div>
+    
     </section>
 
-    <section class="section section--awards">
+    <section class="section section--basic section--awards">
 
-        <div class="container">
-                <p class="section__text--title"></p>
-                <p class="section__text--heading"></p>
-                <p class="section__text--normal"></p>
-    
-        </div>
+                <h4 class="section__text--subtitle">Nagrody</h4>
+                <h3 class="section__text--title">Dla pięciu najlepszych graczy przygotowano </h3>
+                
+                <ul class="section__list--awards">
+                    <li class="section__list-item--awards">
+                        <p class="section__text--number active">#1</p>
+                        <figure class="section__img--award">
+                            <img src="assets/images/pp-reward-1.svg" alt="">
+                        </figure>
+                        <p class="section__text--award section__text--bold">Uścisk dłoni prezesa</p>
+                    </li>
+                    <li class="section__list-item--awards">
+                        <p class="section__text--number">#2</p>
+                        <figure class="section__img--award">
+                                <img src="assets/images/pp-reward-2.svg" alt="">
+
+                        </figure>
+                        <p class="section__text--award section__text--bold">Roczna prenumerata gazety "Wędkarski Świat"</p>
+                    </li>
+                    <li class="section__list-item--awards">
+                        <p class="section__text--number">#3</p>
+                        <figure class="section__img--award">
+                                <img src="assets/images/pp-reward-3.svg" alt="">
+                
+                        </figure>
+                        <p class="section__text--award section__text--bold">Trial na stronie do skracania linków ujeb.se</p>
+                    </li>
+                    <li class="section__list-item--awards">
+                        <p class="section__text--number">#4</p>
+                        <figure class="section__img--award">
+                                <img src="assets/images/pp-reward-4.svg" alt="">
+
+                        </figure>
+                        <p class="section__text--award section__text--bold">Licencja programu WinRar</p>
+                    </li>
+                    <li class="section__list-item--awards">
+                        <p class="section__text--number">#5</p>
+                        <figure class="section__img--award">
+                                <img src="assets/images/pp-reward-5.svg" alt="">
+
+                        </figure>
+                        <p class="section__text--award section__text--bold">Możliwość pracy po godzinach</p>
+                    </li>
+                </ul>
         
     </section>
 
     <section class="section section--join">
 
-        <div class="container">
-                <p class="section__text--title"></p>
-                <p class="section__text--heading"></p>
-                <p class="section__text--normal"></p>
-    
-        </div>
+            <div class="section__card section__card--top  section__card--join">
+
+                    <h4 class="section__text--subtitle">Jak dołączyć?</h4>
+                    <h3 class="section__text--title">Wystarczy chwila, aby móc cieszyć się</h3>
+                    <p class="section__text--regular">Zachęciły Cię nagrody lub wizja momentów pełnych satysfakcji i chcesz dołączyć do turnieju? Zarejestruj się na naszym serwisie i zacznij cieszyć się emocjami przy stole do piłkarzyków!</p>
+                    <button class="section__button section__button--join">Dołącz do turnieju</button>
+
+            </div>
+        
+                <div class="section__card section__card--quote">
+                    <p class="section__text--medium section__text--quote">
+                            Nic jeszcze we mnie nie wzbudziło większych emocji niż Turniej Piłkarzyków Party Parrot. Świetna zabawa i idealny sposób na integrację pracowników. Chcesz wiedzieć jak poznałam bliżej ekipę z pracy? Grałam z nimi w piłkarzyki. To niby takie proste, a jednak gdy ukryty gen rywalizacji sportowej powoduje, że poznajesz tę samą osobę od innej strony. Masa śmiechu gwarantowana. Dzięki Turniejowi Party Parrot mogłam zostać Lewandowskim w spódnicy, a co! 
+                    </p>
+                    <div class="section__signature">
+                        <figure class="section__img--quote">
+                            <img src="assets/images/pp-social-proof.png" alt="Avatar">
+                        </figure>  
+                        <div class="section__text--person">
+                            <p class="section__text--bold">Jolanta</p>
+                            <p class="section__text--medium">
+                                analityk SEO na rynek niemiecki 
+                            </p>
+                        </div>
+                    </div>
+                </div>
         
     </section>
 
     <section class="section section--contact">
 
         <div class="container">
-                <p class="section__text--title"></p>
-                <p class="section__text--heading"></p>
-                <p class="section__text--normal"></p>
-    
+                <h4 class="section__text--subtitle">Kontakt</h4>
+                <h3 class="section__text--title">Napisz do nas!</h3>
+                <form class="form section__form--msg">
+                    <input type="text" name="name" placeholder="Imię i nazwisko" class="form__input section__input">
+                    <input type="email" name="email" placeholder="Adres e-mail" class="form__input section__input--email"></ipnut>
+                    <textarea placeholder="Treść wiadomości" name="msg" id="" cols="30" rows="10" class="form__textarea section__textarea"></textarea>
+                    <button class="section__button section__button--submit">Wyślij wiadomość</button>
+                </form>   
         </div>
         
     </section>
 
+    <footer class="footer">
+        <span class="footer__text">JohnnyBros @2018</span>
+    </footer>
   </body>
 
 </html>

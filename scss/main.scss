@@ -1,7 +1,27 @@
+@import 'utils/variables';
+@import 'mixins/mixins';
+@import 'utils/helpers';
+
 @import 'base/reset';
+@import 'base/typography';
+
 @import 'layout/nav';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/form';
+
+
+@import 'pages/landing';
+@import 'pages/tourney';
+@import 'pages/join';
+@import 'pages/awards';
+
+@import 'pages/contact';
+
 
 body {
-    font-size: 14px;
     background-color: white;
 }

@@ -1,0 +1,30 @@
+.section--tourney {
+    background-color: $secondaryBgColor;
+    padding-top: .5rem;
+}
+
+.section__wrapper--foosball {
+    height:320px;
+}
+
+.section__card--tourney{
+    margin: 0 .5rem;
+    background-color: $primaryBgColor;
+}
+
+.section__img--foosball {
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+
+
+.section__card--quote{
+    padding-top: 4.688rem;
+}
+
+.section__list-item--stats{
+    margin-bottom: 1rem
+}
+
