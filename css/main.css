@@ -80,10 +80,11 @@ button {
 
 @font-face {
   font-family: MilluniumMedium;
-  src: url("../assets/fonts/Millunium Medium/Millunium-Medium.ttf"); }
+  src: url("../assets/fonts/Millunium Medium/Millunium-Medium.eot") format("embedded-opentype"), url("../assets/fonts/Millunium Medium/Millunium-Medium.woff") format("woff"), url("../assets/fonts/Millunium Medium/Millunium-Medium.woff2") format("woff2"), url("../assets/fonts/Millunium Medium/Millunium-Medium.ttf") format("truetype"), url("../assets/fonts/Millunium Medium/Millunium-Medium.svg") format("svg"); }
 
 @font-face {
   font-family: FontAwesome;
+  src: url("../assets/fonts/Font Awesome/fontawesome-webfont.eot") format("embedded-opentype"), url("../assets/fonts/Font Awesome/fontawesome-webfont.woff") format("woff"), url("../assets/fonts/Font Awesome/fontawesome-webfont.woff2") format("woff2"), url("../assets/fonts/Font Awesome/fontawesome-webfont.ttf") format("truetype"), url("../assets/fonts/Font Awesome/fontawesome-webfont.svg") format("svg");
   src: url("../assets/fonts/Font Awesome/fontawesome-webfont.woff"); }
 
 body {
