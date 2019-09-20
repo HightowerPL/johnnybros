@@ -1,6 +1,4 @@
 header{
-    display: inline-flex;
-    justify-content: space-between;
     position: fixed;
     top:0;
     left: 0;
@@ -18,9 +16,16 @@ header{
 
     }
 }
+
+.header__container {
+  display: inline-flex;
+  justify-content: space-between;
+}
 .header__wrapper--logo{
     width: 2rem;
     height: 2.5rem;
+
+    display: inline-block;
     overflow: hidden;
 }
 
@@ -29,6 +34,7 @@ header{
     height: 40px;
     border-radius: 5px;
     cursor: pointer;
+    transition: all .4s;
     hr{
       margin: 5px 0 8px 0;
       border-radius: 5px;
@@ -49,5 +55,41 @@ header{
       .three{
         transform: rotate(40deg);
       }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .header {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      .header__wrapper--logo {
+        width: auto;
+      }
+      &.scroll {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        .header__wrapper--logo {
+          width: 2rem;
+        }
+      }
+    }
+
+
+  }
+
+  @media screen and (min-width: 1232px) {
+    .header__container {
+      display:block;
+    }
+
+    .header__burger {
+      display: none;
+    }
+
+    .header__wrapper--nav {
+      position: static;
+      display: inline-block;
+      background-color: transparent;
+      float: right;
     }
   }

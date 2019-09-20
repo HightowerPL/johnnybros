@@ -1,24 +1,24 @@
-@import 'utils/variables';
 @import 'mixins/mixins';
+@import 'utils/variables';
 @import 'utils/helpers';
 
 @import 'base/reset';
 @import 'base/typography';
 
+@import 'layout/cards';
 @import 'layout/nav';
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/sections';
 
 @import 'components/buttons';
-@import 'components/cards';
+
 @import 'components/form';
 
-
-@import 'pages/landing';
+@import 'pages/home';
 @import 'pages/tourney';
 @import 'pages/join';
 @import 'pages/awards';
-
 @import 'pages/contact';
 
 

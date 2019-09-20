@@ -1,0 +1,26 @@
+.section--basic {
+    .section__text--subtitle {
+        color: $secondaryFontColor;
+        opacity: .5;
+        margin-bottom: 1.25rem;
+    }
+    .section__text--title {
+        color: $secondaryFontColor;
+        opacity: .8;
+        margin-bottom:2.5rem;
+    }
+}
+
+.section__card {
+    padding: 2rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .section--basic {
+        padding: 4.5rem 1.25rem;
+        .section__text--title {
+            margin-bottom: 1.75rem;
+        }
+    }
+
+}

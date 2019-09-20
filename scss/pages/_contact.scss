@@ -1,6 +1,3 @@
-.section--contact {
-
-}
 .section__img--office{
     height: 100%;
     width: 100%;
@@ -11,12 +8,50 @@
     padding: 2.5rem 1rem ;
 }
 
-.section__form--msg {
-    .section__input--name, .section__input--email, .section__textarea {
-        width:100%;
-    }
+.section__input--name, .section__input--email, .section__textarea {
+    width:100%;
 }
 
 .section__button--submit {
     width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .section__wrapper--contact {
+        padding: 3.75rem 1.875rem 0;
+    }
+    .section__input--name, .section__input--email, .section__textarea {
+        font-size: 0.9375rem;
+    }
+    .section__input--name, .section__input--email{
+        width: 48%;
+        margin-bottom:1.5rem;
+    }
+    .section__input--email {
+        float: right;
+    }
+    .section__textarea {
+        height: 6.875rem;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .section--contact {
+        padding-top: 6.25rem;
+        .section__wrapper--img {
+            width: 34.69rem;
+            height: 26.25rem;
+
+            display: inline-block;
+        }
+        .section__wrapper--contact {
+            width: 36.5rem;
+
+            padding: 2.188rem 0 0;
+
+            float: right;
+
+            
+        }
+    }
 }

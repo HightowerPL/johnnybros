@@ -2,18 +2,20 @@
     background-color: $secondaryBgColor;
 } 
 
-.section__card--join{
-    margin:0 .5rem;
-}
-
-
-
 .section__signature{
     display: inline-flex;
+    align-items: center;
+    
+    margin-top: 2.25rem;
 }
 
 .section__card--quote {
     position: relative;
+
+    background-color: $quaternaryBgColor;
+    color: $primaryFontColor;
+
+    padding: 4.688rem .5rem 1rem;
     &::after{
         font-family: FontAwesome;
         content: '\f10e';
@@ -25,15 +27,111 @@
     }
 }
 
+
 .section__img--quote {
     width: 3rem;
     height: 3rem;
+
     border-radius: 50%;
     background-color: $primaryBgColor;
     overflow: hidden;
+
     margin-right: 1rem;
-    // background: url('../assets/images/pp-social-proof.png') no-repeat center center;
     img{
         width: 100%;
+    }
+}
+
+.section__text--name {
+    font-size: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .section--join {
+        position: relative;
+        &::after{
+            @include rectangular($primaryBgColor, 8.75rem);
+        }
+    }
+    .section__card--join {
+        width: 600px;
+        height: 360px;
+
+        position: relative;
+        right: 65px;
+        top: 64px;
+
+        @include margin-auto;
+    }
+
+    .section__card--quote {
+        width: 628px;
+        height: 378px;
+
+        position: relative;
+        left: 42px;
+        z-index:400;
+
+        @include margin-auto;
+        padding: 90px 30px 48px 84px;
+        &::after{
+            font-family: FontAwesome;
+            font-size: 1.5rem;
+            content: '\f10e';
+
+            position: absolute;
+            top: 90px;
+            right: 0;
+            left: 30px;
+
+            opacity: .5;
+        }
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .section--join {
+        height: 39.44rem;
+        &:after{
+            display: none;
+        }
+    }
+    .section__card--join {
+        height: 371px;
+
+        position: absolute;
+        top: 3.75rem;
+        left: 0; 
+        right: unset;
+
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .section__card--quote {
+        width: 648px;
+        height: 352px;
+
+        position: absolute;
+        top: 136px;
+        right:0; 
+        left:unset;
+
+        margin-left: 0;
+        margin-right: 0;
+
+        padding-top: 40px;
+        padding-left: 138px;
+        &:after{
+            top: 40px;
+            left: 84px;
+        }
+    }
+    .section__signature {
+        margin-top: 1.25rem;
+    }
+    .section__img--quote{
+        width: 4rem;
+        height: 4rem;
     }
 }

@@ -1,12 +1,27 @@
 .section__button {
+    width: 100%;
     height:42px;
-    width: 240px;
-    background-color: $quaternaryBgColor;
+    max-width: 20rem;
+
     font-family: RalewayBold;
+
+    background-color: $quaternaryBgColor;
     color: $primaryFontColor;
     border-radius: 2px;
-    border: none;
+    border: 1px solid $quaternaryBgColor;
     cursor: pointer;
+    transition: all .4s;
+    &:hover {
+        color: $tertiaryFontColor;
+        background-color: $primaryBgColor;
+    }
 }
 
+@media screen and (min-width: 768px) {
+    .section__button {
+        max-width: 20rem;
+        height: 3rem;
+    }
+
+}
 

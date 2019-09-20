@@ -1,12 +1,15 @@
 .section--awards {
     text-align: center;
-    padding: 2rem 1rem 0;
+    padding: 4rem 1rem 0;
 }
 
 .section__list--awards {
     margin-top: 2rem;
     margin-bottom: 2rem;
-}
+    display: inline-flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+} 
 
 .section__list-item--awards {
     display: inline-block;
@@ -25,6 +28,41 @@
     }
 }
 
-.section__img--award {
+.section__wrapper--award {
     margin-bottom: 1rem;
+    height: 89px;
+    position: relative;
+}
+
+.section__img--award {
+    @include center(both);
+}
+
+@media screen and (min-width: 768px) {
+    .section--awards{
+        padding-bottom: 2rem;
+    }
+    .section__list-item--awards {
+        width: 15rem;
+        .section__text--number {
+            font-size: 3rem;
+            margin-bottom: 2.5rem;
+        }
+        .section__wrapper--award {
+            margin-bottom: 1.25rem;
+        }
+        .section__text--award {
+            max-width: 11.25rem;
+            @include margin-auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .section--awards {
+        padding-top: 4rem; 
+        .section__text--for-best {
+            margin-bottom: 3.75rem;
+        }
+    }
 }

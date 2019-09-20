@@ -1,0 +1,86 @@
+.section--home{
+    background: url('../assets/images/pp-main-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    padding: 6rem 1rem 2rem;
+    text-align: center;
+    .section__button--join {
+        display:block;
+        max-width: 15rem;
+        @include margin-auto;
+    }
+}
+
+.section__text--name-pl{
+    margin-bottom: 2rem;
+    letter-spacing:3px;
+}
+.section__text--name-eng{
+    padding-bottom: 4rem;
+}
+.section__text--intro {
+    max-width: 40rem;
+    margin-bottom: 1rem;
+    @include margin-auto;
+   }
+
+
+.section__wrapper--icon {
+    opacity: .7;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 50%;
+    width:  1.875rem;
+    height:  1.875rem;
+    margin-top: 1.25rem;
+    transition: all .4s;
+    @include margin-auto;
+    .icon--fa{
+        font-size: .75rem;
+        @include center(both);
+    }
+    &:hover {
+        background-color: $primaryBgColor;
+        color: $secondaryColor;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .section--home {
+        background-position: center -270px;
+        padding-top: 10rem;
+        padding-bottom: 6rem;
+        .section__button--join {
+            max-width: 20rem;
+        } 
+    }
+    .section__text--name-eng {
+        padding-bottom: 2rem;
+    }
+    .section__text--intro {
+        margin-bottom: 2rem;
+    }
+    .section__wrapper--icon {
+        width: 2.25rem;
+        height: 2.25rem;
+        margin-top: 2.25rem;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .section--home {
+        height: 45rem;
+        padding-top: 14rem;
+        padding-bottom: 6rem;
+    }
+
+    .section__text--intro {
+        margin-bottom: 3rem;
+    }
+
+    .section__wrapper--icon {
+        font-size: .875rem;
+        margin-top: 3.25rem;
+    }
+}

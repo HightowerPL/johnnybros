@@ -1,0 +1,28 @@
+.section__card--top {
+    background-color: $primaryBgColor;
+    @include box-shadow(0,3px,6px,$shadow);
+
+    position: relative;
+    top: 2rem;
+    z-index:500;
+
+    padding: 2rem 1rem;
+    margin: 0 .5rem;
+    .section__text--subtitle {
+        color: $secondaryFontColor;
+        opacity: .5;
+        margin-bottom: 1.25rem;
+    }
+    .section__text--title, .section__text--regular {
+        color: $secondaryFontColor;
+        opacity: .8;
+        margin-bottom:1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section__card--top {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
