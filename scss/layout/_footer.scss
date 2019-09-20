@@ -1,10 +1,13 @@
 .footer {
+    height:5rem;
+
     position: relative;
     background-color: $tertiaryBgColor;
-    color: $primaryFontColor;
+
     padding:1rem;
+
+    color: $primaryFontColor;
     text-align: center;
-    height:5rem;
 }
 
 .footer__text{

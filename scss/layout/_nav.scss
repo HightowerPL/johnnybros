@@ -16,22 +16,30 @@
     padding: 4rem 3rem;
 }
 
-.nav__list-item {
+.nav__text {
     font-family: RalewayMedium;
+}
+
+.nav__list-item {
     font-size:  1.375rem;
+    text-transform: capitalize;
+    letter-spacing: .0625rem;
+    
     color: $primaryFontColor;
-    margin-bottom: 1.25rem;
     transition: all .4s;
     position: relative;
-    letter-spacing: .0625rem;
+
+    margin-bottom: 1.25rem;
     &:after{
         content: '';
-        width: 42px;
+        width: 2.625rem;
         height: 3px;
-        background-color: $quaternaryBgColor;
+        
         position: absolute;
         top: 50%;
         left: -4.25rem;
+
+        background-color: $quaternaryBgColor;
         display: none;
     }
     &:hover::after{
@@ -39,7 +47,7 @@
     }
     &.active::after{
         display: block;
-        height:3px;
+        height: 3px;
         background-color: $quaternaryBgColor; 
     }
 
@@ -54,13 +62,13 @@
         font-size: 1.875rem;
         &:after{
             width: 4rem;
-            left:-7rem;
+            left: -7rem;
         }
     }
     .header__burger.active {
         position: relative;
         top: 2rem;
-        right:2rem;
+        right: 2rem;
     }
 }
 
@@ -70,9 +78,11 @@
         padding: .675rem 0 0;
         background-color: transparent;
     }
+    .nav__text {
+        font-family: RalewayBold;
+    }
     .nav__list-item {
         display: inline-block;
-        font-family: RalewayBold;
         font-size: 0.9375rem;
         text-transform: uppercase;
         margin-left:1.5rem;

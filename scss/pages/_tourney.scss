@@ -17,9 +17,8 @@
 .section__card--stats {
     background-color: $quaternaryBgColor;
     color: $primaryFontColor;
-    padding: 2rem;
+    padding: 2.25rem;
     text-align: center;
-
     .section__text--number {
         font-size:2.188rem;
         margin-bottom: .5rem
@@ -27,13 +26,19 @@
 
 }
 
+.section__list--stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .section__list-item--stats{
-    margin-bottom: 1rem
+    margin-top: 2rem
 }
 
 .section__text--daily-stats {
     letter-spacing: 3px;
-    margin-bottom: 2rem;
+    margin-bottom: .25rem;
 }
 
 .section__text--stat{
@@ -57,8 +62,8 @@
         top: 0;
         right: 7.188rem;
         z-index: 500;
-        @include margin-auto;
 
+        @include margin-auto;
     }
 
     .section__wrapper--foosball {
@@ -79,11 +84,14 @@
         left: 50%;
         transform: translate(7.125rem, -15.63rem);
         z-index: 400;
+
+        padding: 2.75rem;
     }
+
 
     .section__list-item--stats {
         max-width: 6.25rem;
-        margin-bottom: 2rem;
+        margin-top: 2.25rem;
         .section__text--number {
             font-size: 3rem;
             margin-bottom: 1rem;
@@ -142,6 +150,6 @@
     }
 
     .section__list-item--stats {
-        margin-bottom: 0;
+        margin-top: 0;
     }
 }

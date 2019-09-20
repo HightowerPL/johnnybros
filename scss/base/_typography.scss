@@ -62,12 +62,6 @@ button {
     line-height:  1.125rem;
 }
 
-
-.nav__list-item {
-    font-size: 0.9375rem;
-    text-transform: capitalize;
-}
-
 .section__text--title, .section__text--number{
     font-family: MilluniumMedium;
 }
@@ -93,6 +87,8 @@ button {
 .icon--fa {
     font-family: FontAwesome;
 }
+
+
 
 @media screen and (min-width: 768px) {
     h1{

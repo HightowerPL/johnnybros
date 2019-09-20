@@ -14,7 +14,7 @@
 .section__list-item--awards {
     display: inline-block;
     flex-direction: column;
-    width: 180px;
+    width: 11.25rem;
     margin-bottom: 2.25rem;
     .section__text--number {
         font-size: 2.25rem;
@@ -30,7 +30,7 @@
 
 .section__wrapper--award {
     margin-bottom: 1rem;
-    height: 89px;
+    height: 5.563rem;
     position: relative;
 }
 
@@ -48,13 +48,17 @@
             font-size: 3rem;
             margin-bottom: 2.5rem;
         }
-        .section__wrapper--award {
-            margin-bottom: 1.25rem;
-        }
-        .section__text--award {
-            max-width: 11.25rem;
-            @include margin-auto;
-        }
+    }
+    .section__text--for-best {
+        max-width: 31.5rem;
+        @include margin-auto;
+    }
+    .section__wrapper--award {
+        margin-bottom: 1.25rem;
+    }
+    .section__text--award {
+        max-width: 11.25rem;
+        @include margin-auto;
     }
 }
 

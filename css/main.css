@@ -6,23 +6,9 @@
   margin-left: auto;
   margin-right: auto; }
 
-.mobile-hide {
-  display: none; }
-
 .stop-scrolling {
   height: 100%;
   overflow: hidden; }
-
-.tablet--vertical {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-@media screen and (min-widtH: 768px) {
-  .mobile-hide {
-    display: inline-block; }
-  .mobile-show {
-    display: none; } }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -131,10 +117,6 @@ button {
   font-size: 0.9375rem;
   line-height: 1.125rem; }
 
-.nav__list-item {
-  font-size: 0.9375rem;
-  text-transform: capitalize; }
-
 .section__text--title, .section__text--number {
   font-family: MilluniumMedium; }
 
@@ -199,8 +181,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .section__card--top {
-    padding-left: 2rem;
-    padding-right: 2rem; } }
+    padding: 2.5rem 1.875rem; } }
 
 .header__wrapper--nav {
   display: none;
@@ -218,22 +199,25 @@ button {
   float: right;
   padding: 4rem 3rem; }
 
+.nav__text {
+  font-family: RalewayMedium; }
+
 .nav__list-item {
-  font-family: RalewayMedium;
   font-size: 1.375rem;
+  text-transform: capitalize;
+  letter-spacing: .0625rem;
   color: white;
-  margin-bottom: 1.25rem;
   transition: all .4s;
   position: relative;
-  letter-spacing: .0625rem; }
+  margin-bottom: 1.25rem; }
   .nav__list-item:after {
     content: '';
-    width: 42px;
+    width: 2.625rem;
     height: 3px;
-    background-color: #3FAE49;
     position: absolute;
     top: 50%;
     left: -4.25rem;
+    background-color: #3FAE49;
     display: none; }
   .nav__list-item:hover::after {
     display: block; }
@@ -261,9 +245,10 @@ button {
     width: auto;
     padding: .675rem 0 0;
     background-color: transparent; }
+  .nav__text {
+    font-family: RalewayBold; }
   .nav__list-item {
     display: inline-block;
-    font-family: RalewayBold;
     font-size: 0.9375rem;
     text-transform: uppercase;
     margin-left: 1.5rem;
@@ -305,8 +290,8 @@ header {
   overflow: hidden; }
 
 .header__burger {
-  width: 30px;
-  height: 40px;
+  width: 1.875rem;
+  height: 2.5rem;
   border-radius: 5px;
   cursor: pointer;
   transition: all .4s; }
@@ -351,12 +336,12 @@ header {
     float: right; } }
 
 .footer {
+  height: 5rem;
   position: relative;
   background-color: #1E3066;
-  color: white;
   padding: 1rem;
-  text-align: center;
-  height: 5rem; }
+  color: white;
+  text-align: center; }
 
 .footer__text {
   font-size: 0.9375rem;
@@ -381,9 +366,6 @@ header {
   opacity: .8;
   margin-bottom: 2.5rem; }
 
-.section__card {
-  padding: 2rem 1rem; }
-
 @media screen and (min-width: 768px) {
   .section--basic {
     padding: 4.5rem 1.25rem; }
@@ -407,13 +389,13 @@ header {
 
 @media screen and (min-width: 768px) {
   .section__button {
-    max-width: 20rem;
-    height: 3rem; } }
+    height: 3rem;
+    max-width: 20rem; } }
 
 .form__input, .form__textarea {
   font-family: RalewayRegular;
-  margin-bottom: 1rem;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  margin-bottom: 1rem; }
 
 .form__input {
   padding: .5rem 0;
@@ -449,11 +431,11 @@ header {
     margin-right: auto; }
 
 .section__text--name-pl {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   letter-spacing: 3px; }
 
 .section__text--name-eng {
-  padding-bottom: 4rem; }
+  margin-bottom: 1.5rem; }
 
 .section__text--intro {
   max-width: 40rem;
@@ -492,7 +474,7 @@ header {
     .section--home .section__button--join {
       max-width: 20rem; }
   .section__text--name-eng {
-    padding-bottom: 2rem; }
+    margin-bottom: 2rem; }
   .section__text--intro {
     margin-bottom: 2rem; }
   .section__wrapper--icon {
@@ -526,18 +508,23 @@ header {
 .section__card--stats {
   background-color: #3FAE49;
   color: white;
-  padding: 2rem;
+  padding: 2.25rem;
   text-align: center; }
   .section__card--stats .section__text--number {
     font-size: 2.188rem;
     margin-bottom: .5rem; }
 
+.section__list--stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .section__list-item--stats {
-  margin-bottom: 1rem; }
+  margin-top: 2rem; }
 
 .section__text--daily-stats {
   letter-spacing: 3px;
-  margin-bottom: 2rem; }
+  margin-bottom: .25rem; }
 
 .section__text--stat {
   font-size: 0.9375rem; }
@@ -577,10 +564,11 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(7.125rem, -15.63rem);
-    z-index: 400; }
+    z-index: 400;
+    padding: 2.75rem; }
   .section__list-item--stats {
     max-width: 6.25rem;
-    margin-bottom: 2rem; }
+    margin-top: 2.25rem; }
     .section__list-item--stats .section__text--number {
       font-size: 3rem;
       margin-bottom: 1rem; } }
@@ -620,7 +608,7 @@ header {
     align-items: baseline;
     justify-content: space-between; }
   .section__list-item--stats {
-    margin-bottom: 0; } }
+    margin-top: 0; } }
 
 .section--join {
   background-color: #F5F5F5; }
@@ -670,30 +658,30 @@ header {
       left: 0;
       right: 0; }
   .section__card--join {
-    width: 600px;
-    height: 360px;
+    width: 37.5rem;
+    height: 22.5rem;
     position: relative;
-    right: 65px;
-    top: 64px;
+    right: 4.063rem;
+    top: 4.063rem;
     margin-left: auto;
     margin-right: auto; }
   .section__card--quote {
-    width: 628px;
-    height: 378px;
+    width: 39.25rem;
+    height: 23.63rem;
     position: relative;
-    left: 42px;
+    left: 2.625rem;
     z-index: 400;
     margin-left: auto;
     margin-right: auto;
-    padding: 90px 30px 48px 84px; }
+    padding: 5.625rem 1.875rem 3rem 5.25rem; }
     .section__card--quote::after {
       font-family: FontAwesome;
       font-size: 1.5rem;
       content: '\f10e';
       position: absolute;
-      top: 90px;
+      top: 5.625rem;
       right: 0;
-      left: 30px;
+      left: 1.875rem;
       opacity: .5; } }
 
 @media screen and (min-width: 1232px) {
@@ -702,7 +690,7 @@ header {
     .section--join:after {
       display: none; }
   .section__card--join {
-    height: 371px;
+    height: 23.19rem;
     position: absolute;
     top: 3.75rem;
     left: 0;
@@ -710,19 +698,19 @@ header {
     margin-left: 0;
     margin-right: 0; }
   .section__card--quote {
-    width: 648px;
-    height: 352px;
+    width: 40.5rem;
+    height: 22rem;
     position: absolute;
-    top: 136px;
+    top: 8.5rem;
     right: 0;
     left: unset;
     margin-left: 0;
     margin-right: 0;
-    padding-top: 40px;
-    padding-left: 138px; }
+    padding-top: 2.5rem;
+    padding-left: 8.625rem; }
     .section__card--quote:after {
-      top: 40px;
-      left: 84px; }
+      top: 2.5rem;
+      left: 5.25rem; }
   .section__signature {
     margin-top: 1.25rem; }
   .section__img--quote {
@@ -743,7 +731,7 @@ header {
 .section__list-item--awards {
   display: inline-block;
   flex-direction: column;
-  width: 180px;
+  width: 11.25rem;
   margin-bottom: 2.25rem; }
   .section__list-item--awards .section__text--number {
     font-size: 2.25rem;
@@ -756,7 +744,7 @@ header {
 
 .section__wrapper--award {
   margin-bottom: 1rem;
-  height: 89px;
+  height: 5.563rem;
   position: relative; }
 
 .section__img--award {
@@ -775,12 +763,16 @@ header {
     .section__list-item--awards .section__text--number {
       font-size: 3rem;
       margin-bottom: 2.5rem; }
-    .section__list-item--awards .section__wrapper--award {
-      margin-bottom: 1.25rem; }
-    .section__list-item--awards .section__text--award {
-      max-width: 11.25rem;
-      margin-left: auto;
-      margin-right: auto; } }
+  .section__text--for-best {
+    max-width: 31.5rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .section__wrapper--award {
+    margin-bottom: 1.25rem; }
+  .section__text--award {
+    max-width: 11.25rem;
+    margin-left: auto;
+    margin-right: auto; } }
 
 @media screen and (min-width: 1232px) {
   .section--awards {
